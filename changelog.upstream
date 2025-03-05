@@ -1,3 +1,17 @@
+commit fc2a1b438a31b73f01e676327f55306121a7d604
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Mar 5 04:17:08 2025 -0500
+
+    add gnome-keyring to whonix-workstation-packages-recommended-gui
+    
+    https://forums.whonix.org/t/signal-messenger-keyring-issue-on-whonix-electron-safestorage-missing/21406
+
+commit 687eed6446503e4e4dfae04a289d2768bef9f1dd
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Tue Dec 31 19:22:14 2024 +0000
+
+    bumped changelog version
+
 commit e17e7d5bac5f0507115b3af8658952c20d941205
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Tue Dec 31 13:26:24 2024 -0500
