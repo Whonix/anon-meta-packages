@@ -1,3 +1,22 @@
+commit 4cfd01c3e3dfd6eb34488f978664f0fe090852b8
+Merge: 393e2aa 73ac885
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Tue Jul 22 03:20:10 2025 -0400
+
+    Merge remote-tracking branch 'ArrayBolt3/arraybolt3/default-browser'
+
+commit 73ac8852e5779df95b8b90ffe41247b87f8ce800
+Author: Aaron Rainbolt <arraybolt3@ubuntu.com>
+Date:   Mon Jul 21 19:35:13 2025 -0500
+
+    Remove thunderbird, add browser-choice
+
+commit 393e2aaa01c299157b00a1c1448379a57eb72a8a
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Mar 5 11:14:53 2025 +0000
+
+    bumped changelog version
+
 commit fc2a1b438a31b73f01e676327f55306121a7d604
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Wed Mar 5 04:17:08 2025 -0500
