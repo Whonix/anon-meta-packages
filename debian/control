@@ -144,7 +144,8 @@ Description: Recommended packages for Whonix-Workstation CLI
 Package: whonix-workstation-packages-recommended-gui
 Architecture: all
 Pre-Depends: legacy-dist
-Depends: catfish,
+Depends: browser-choice | dummy-dependency,
+         catfish,
          electrum | dummy-dependency-electrum,
          flatpak,
          ffmpeg,
@@ -158,7 +159,6 @@ Depends: catfish,
          tb-default-browser | dummy-dependency,
          tb-starter | dummy-dependency,
          tb-updater | dummy-dependency,
-         thunderbird,
          tumbler,
          vlc,
          whonix-welcome-page,
