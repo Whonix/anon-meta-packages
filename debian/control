@@ -9,7 +9,7 @@ Build-Depends: debhelper (>= 13), debhelper-compat (= 13)
 Homepage: https://github.com/Whonix/anon-meta-packages
 Vcs-Browser: https://github.com/Whonix/anon-meta-packages
 Vcs-Git: https://github.com/Whonix/anon-meta-packages.git
-Standards-Version: 4.6.2
+Standards-Version: 4.7.2
 Rules-Requires-Root: no
 
 Package: whonix-shared-default-applications-gui
@@ -150,7 +150,6 @@ Depends: browser-choice | dummy-dependency,
          flatpak,
          ffmpeg,
          gnome-keyring,
-         gpa,
          keepassxc,
          mat2,
          metadata-cleaner,
