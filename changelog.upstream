@@ -1,3 +1,15 @@
+commit 210217fca48ebeaadc87c1f748977e7d5d390424
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sun Aug 10 02:20:22 2025 -0400
+
+    fix, do not install browser-choice in Whonix-Workstation by default
+
+commit c0f71dcaf744130d9433608440bfc9f6c22462d0
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Tue Jul 22 07:27:37 2025 +0000
+
+    bumped changelog version
+
 commit 4cfd01c3e3dfd6eb34488f978664f0fe090852b8
 Merge: 393e2aa 73ac885
 Author: Patrick Schleizer <adrelanos@whonix.org>
