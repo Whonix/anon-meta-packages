@@ -1,8 +1,46 @@
+commit 49eef41c51d92dc738f4a8a52e67acb7461ce9a3
+Merge: 1ec00cb 8c17384
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Aug 20 10:14:10 2025 -0400
+
+    Merge remote-tracking branch 'ArrayBolt3/arraybolt3/trixie'
+
+commit 1ec00cbb6fe5377be6114a70f26f1f2ffd7da1e5
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Aug 20 06:57:32 2025 -0400
+
+    bumped Standards-Version
+
+commit 706553227d737f0978250fa38c4c94c22c2af9d4
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Aug 20 06:25:39 2025 -0400
+
+    readme
+
+commit 8c173846326a5fb02ab4caa626b2648addc9b1f7
+Merge: 035f493 5b8ca5c
+Author: Aaron Rainbolt <arraybolt3@ubuntu.com>
+Date:   Sun Aug 10 14:13:35 2025 -0500
+
+    Merge branch 'master' into arraybolt3/trixie
+
+commit 5b8ca5c5ea9f1b673a7c8ac6d3caa5ecdadc8926
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sun Aug 10 06:35:13 2025 +0000
+
+    bumped changelog version
+
 commit 210217fca48ebeaadc87c1f748977e7d5d390424
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Sun Aug 10 02:20:22 2025 -0400
 
     fix, do not install browser-choice in Whonix-Workstation by default
+
+commit 035f493fdf72c37a6a95ded8991ff798cadb17e0
+Author: Aaron Rainbolt <arraybolt3@ubuntu.com>
+Date:   Tue Aug 5 22:58:22 2025 -0500
+
+    Port to Trixie.
 
 commit c0f71dcaf744130d9433608440bfc9f6c22462d0
 Author: Patrick Schleizer <adrelanos@whonix.org>
