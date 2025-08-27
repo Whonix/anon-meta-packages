@@ -150,14 +150,12 @@ Depends: catfish,
          ffmpeg,
          gnome-keyring,
          keepassxc,
+         lximage-qt,
          mat2,
          metadata-cleaner,
          pinentry-qt | pinentry-x11,
-         ristretto,
-         tb-default-browser | dummy-dependency,
          tb-starter | dummy-dependency,
          tb-updater | dummy-dependency,
-         tumbler,
          vlc,
          whonix-welcome-page,
          whonix-workstation-packages-recommended-cli,
@@ -245,7 +243,7 @@ Description: Default packages for Whonix-Gateway-RPi CLI
 Package: qubes-whonix-gateway
 Architecture: all
 Pre-Depends: legacy-dist
-Depends: kicksecure-desktop-applications-xfce,
+Depends: kicksecure-desktop-applications-lxqt,
          qubes-whonix,
          qubes-whonix-gateway-packages-recommended,
          qubes-whonix-shared-packages-recommended,
@@ -265,7 +263,7 @@ Description: Default packages for Qubes-Whonix-Gateway
 Package: qubes-whonix-workstation
 Architecture: all
 Pre-Depends: legacy-dist
-Depends: kicksecure-desktop-applications-xfce,
+Depends: kicksecure-desktop-applications-lxqt,
          qubes-whonix,
          qubes-whonix-shared-packages-recommended,
          qubes-whonix-workstation-packages-recommended,
@@ -282,44 +280,44 @@ Description: Default packages for Qubes-Whonix-Workstation
  .
  Do not remove.
 
-Package: non-qubes-whonix-gateway-xfce
+Package: non-qubes-whonix-gateway-lxqt
 Architecture: all
 Pre-Depends: legacy-dist
-Depends: kicksecure-desktop-applications-xfce,
-         kicksecure-desktop-environment-essential-xfce,
+Depends: kicksecure-desktop-applications-lxqt,
+         kicksecure-desktop-environment-essential-lxqt,
          non-qubes-enhancements-cli,
          non-qubes-enhancements-gui,
          non-qubes-whonix-gateway-cli,
          whonix-gateway-default-applications-gui,
          whonix-shared-default-applications-gui,
          ${misc:Depends}
-Description: Default Packages for Non-Qubes-Whonix-Gateway Xfce GUI
+Description: Default Packages for Non-Qubes-Whonix-Gateway LXQt GUI
  A metapackage, which installs packages, for a
- Non-Qubes-Whonix-Default-Gateway with Xfce.
+ Non-Qubes-Whonix-Default-Gateway with LXQt.
  .
- Depends on kicksecure-desktop-environment-essential-xfce because that is
- required in Non-Qubes-Whonix Xfce in order to get graphical desktop
+ Depends on kicksecure-desktop-environment-essential-lxqt because that is
+ required in Non-Qubes-Whonix LXQt in order to get graphical desktop
  environment.
  .
  Do not remove.
 
-Package: non-qubes-whonix-workstation-xfce
+Package: non-qubes-whonix-workstation-lxqt
 Architecture: all
 Pre-Depends: legacy-dist
-Depends: kicksecure-desktop-applications-xfce,
-         kicksecure-desktop-environment-essential-xfce,
+Depends: kicksecure-desktop-applications-lxqt,
+         kicksecure-desktop-environment-essential-lxqt,
          non-qubes-audio,
          non-qubes-enhancements-gui,
          non-qubes-whonix-workstation-cli,
          whonix-shared-default-applications-gui,
          whonix-workstation-packages-recommended-gui,
          ${misc:Depends}
-Description: Default Packages for Non-Qubes-Whonix-Workstation Xfce GUI
+Description: Default Packages for Non-Qubes-Whonix-Workstation LXQt GUI
  A metapackage, which installs packages, for a
- Non-Qubes-Whonix-Default-Workstation with Xfce.
+ Non-Qubes-Whonix-Default-Workstation with LXQt.
  .
- Depends on kicksecure-desktop-environment-essential-xfce because that is
- required in Non-Qubes-Whonix Xfce in order to get graphical desktop
+ Depends on kicksecure-desktop-environment-essential-LXQt because that is
+ required in Non-Qubes-Whonix LXQt in order to get graphical desktop
  environment.
  .
  Do not remove.
@@ -344,21 +342,21 @@ Description: Default Packages for Non-Qubes-Whonix-Workstation CLI
  .
  Do not remove.
 
-#Package: whonix-xfce-host-virtualbox
+#Package: whonix-lxqt-host-virtualbox
 #Architecture: all
 #Pre-Depends: legacy-dist
 ## NOTE:
-## kicksecure-xfce-host:
+## kicksecure-lxqt-host:
 ## - Is a standalone packge.
-## - Should not "Depends: kicksecure-xfce-host" because is standalone, non-Whonix.
-## - Should not "Depends: kicksecure-xfce" since that would install
+## - Should not "Depends: kicksecure-lxqt-host" because is standalone, non-Whonix.
+## - Should not "Depends: kicksecure-lxqt" since that would install
 ##   binaries-freedom and other unwanted packages for Whonix-Host.
 #Depends: arc-theme,
 #         kicksecure-cli,
 #         kicksecure-network-conf,
 #         kicksecure-network-conf-gui,
-#         kicksecure-shared-host-xfce,
-#         kicksecure-xfce,
+#         kicksecure-shared-host-lxqt,
+#         kicksecure-lxqt,
 #         libvirt-dist,
 #         qemu-utils,
 #         whonix-base-files,
