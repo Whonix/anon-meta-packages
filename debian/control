@@ -256,7 +256,6 @@ Depends: anon-ws-base-files,
  gddrescue,
  lvm2,
  ntfs-3g,
- mat2,
  ${misc:Depends}
 Breaks: whonix-workstation-packages-dependencies-cli, whonix-workstation-packages-recommended-cli
 Replaces: whonix-workstation-packages-dependencies-cli, whonix-workstation-packages-recommended-cli
@@ -289,6 +288,8 @@ Depends: catfish,
  pipewire-pulse | pulseaudio,
  wireplumber | pulseaudio,
  rtkit | pulseaudio,
+ catfish,
+ mat2,
  ${misc:Depends}
 Breaks: whonix-workstation-packages-recommended-gui, whonix-workstation-shared-packages-shared-meta
 Replaces: whonix-workstation-packages-recommended-gui, whonix-workstation-shared-packages-shared-meta
@@ -302,8 +303,7 @@ Description: Whonix-Workstation systems, all hardware, GUI packages
 Package: whonix-workstation-general-gui-lxqt
 Architecture: all
 Pre-Depends: legacy-dist
-Depends: lxqt-archiver,
- pavucontrol-qt,
+Depends: pavucontrol-qt,
  gnome-keyring,
  ${misc:Depends}
 Description: Whonix-Workstation systems, all hardware, LXQt GUI packages
