@@ -302,8 +302,7 @@ Description: Whonix-Workstation systems, all hardware, GUI packages
 Package: whonix-workstation-general-gui-lxqt
 Architecture: all
 Pre-Depends: legacy-dist
-Depends: pavucontrol-qt,
- gnome-keyring,
+Depends: gnome-keyring,
  ${misc:Depends}
 Description: Whonix-Workstation systems, all hardware, LXQt GUI packages
  For Whonix-Workstation systems.
@@ -398,6 +397,8 @@ Description: Whonix-Workstation systems, not Qubes VMs, command-line packages
 Package: whonix-workstation-nonqubes-gui-lxqt
 Architecture: all
 Pre-Depends: legacy-dist
+Depends: pavucontrol-qt,
+ ${misc:Depends}
 Breaks: non-qubes-whonix-workstation-lxqt
 Replaces: non-qubes-whonix-workstation-lxqt
 Description: Whonix-Workstation systems, not Qubes VMs, LXQt GUI packages
