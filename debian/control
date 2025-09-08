@@ -17,8 +17,10 @@ Depends: whonix-base-files,
  tor-ctrl,
  uwt,
  ${misc:Depends}
-Breaks: whonix-shared-packages-dependencies-cli, whonix-shared-packages-recommended-cli
-Replaces: whonix-shared-packages-dependencies-cli, whonix-shared-packages-recommended-cli
+Breaks: whonix-shared-packages-dependencies-cli,
+ whonix-shared-packages-recommended-cli
+Replaces: whonix-shared-packages-dependencies-cli,
+ whonix-shared-packages-recommended-cli
 Description: Whonix systems, all hardware, command-line packages
  For all Whonix systems.
  .
@@ -80,8 +82,10 @@ Depends: anon-connection-wizard,
  onioncircuits,
  tor-control-panel,
  ${misc:Depends}
-Breaks: whonix-gateway-default-applications-gui, whonix-gateway-shared-packages-shared-meta
-Replaces: whonix-gateway-default-applications-gui, whonix-gateway-shared-packages-shared-meta
+Breaks: whonix-gateway-default-applications-gui,
+ whonix-gateway-shared-packages-shared-meta
+Replaces: whonix-gateway-default-applications-gui,
+ whonix-gateway-shared-packages-shared-meta
 Description: Whonix-Gateway systems, all hardware, GUI packages
  For Whonix-Gateway systems.
  .
@@ -155,8 +159,10 @@ Description: Whonix-Gateway systems, not Qubes VMs, command-line packages
 Package: whonix-gateway-nonqubes-gui-lxqt
 Architecture: all
 Pre-Depends: legacy-dist
-Breaks: non-qubes-whonix-gateway-lxqt
-Replaces: non-qubes-whonix-gateway-lxqt
+Breaks: non-qubes-whonix-gateway-lxqt,
+ non-qubes-whonix-gateway-xfce
+Replaces: non-qubes-whonix-gateway-lxqt,
+ non-qubes-whonix-gateway-xfce
 Description: Whonix-Gateway systems, not Qubes VMs, LXQt GUI packages
  For Whonix-Gateway systems.
  .
@@ -257,8 +263,10 @@ Depends: anon-ws-base-files,
  lvm2,
  ntfs-3g,
  ${misc:Depends}
-Breaks: whonix-workstation-packages-dependencies-cli, whonix-workstation-packages-recommended-cli
-Replaces: whonix-workstation-packages-dependencies-cli, whonix-workstation-packages-recommended-cli
+Breaks: whonix-workstation-packages-dependencies-cli,
+ whonix-workstation-packages-recommended-cli
+Replaces: whonix-workstation-packages-dependencies-cli,
+ whonix-workstation-packages-recommended-cli
 Description: Whonix-Workstation systems, all hardware, command-line packages
  For Whonix-Workstation systems.
  .
@@ -290,8 +298,10 @@ Depends: catfish,
  rtkit,
  mat2,
  ${misc:Depends}
-Breaks: whonix-workstation-packages-recommended-gui, whonix-workstation-shared-packages-shared-meta
-Replaces: whonix-workstation-packages-recommended-gui, whonix-workstation-shared-packages-shared-meta
+Breaks: whonix-workstation-packages-recommended-gui,
+ whonix-workstation-shared-packages-shared-meta
+Replaces: whonix-workstation-packages-recommended-gui,
+ whonix-workstation-shared-packages-shared-meta
 Description: Whonix-Workstation systems, all hardware, GUI packages
  For Whonix-Workstation systems.
  .
@@ -399,8 +409,10 @@ Architecture: all
 Pre-Depends: legacy-dist
 Depends: pavucontrol-qt,
  ${misc:Depends}
-Breaks: non-qubes-whonix-workstation-lxqt
-Replaces: non-qubes-whonix-workstation-lxqt
+Breaks: non-qubes-whonix-workstation-lxqt,
+ non-qubes-whonix-workstation-xfce
+Replaces: non-qubes-whonix-workstation-lxqt,
+ non-qubes-whonix-workstation-xfce
 Description: Whonix-Workstation systems, not Qubes VMs, LXQt GUI packages
  For Whonix-Workstation systems.
  .
@@ -495,9 +507,9 @@ Description: Whonix-Workstation systems, VMs, LXQt GUI packages
 Package: whonix-gateway-packages-dependencies-pre
 Architecture: all
 Depends: dist-base-files,
-         whonix-base-files,
-         whonix-gw-network-conf,
-         ${misc:Depends}
+ whonix-base-files,
+ whonix-gw-network-conf,
+ ${misc:Depends}
 Description: Dependencies for Whonix-Gateway that changes network related files
  A metapackage, which installs packages which Whonix-Gateway
  depends on. Can not be merged into whonix-gateway-packages-dependencies due to
@@ -506,9 +518,9 @@ Description: Dependencies for Whonix-Gateway that changes network related files
 Package: whonix-workstation-packages-dependencies-pre
 Architecture: all
 Depends: dist-base-files,
-         whonix-base-files,
-         whonix-ws-network-conf,
-         ${misc:Depends}
+ whonix-base-files,
+ whonix-ws-network-conf,
+ ${misc:Depends}
 Description: Dependencies for Whonix-Workstation that changes network related files
  A metapackage, which installs packages which Whonix-Workstation
  depends on. Can not be merged into whonix-workstation-packages-dependencies
