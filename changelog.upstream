@@ -1,3 +1,28 @@
+commit b44f2b61091baac760dbbac5749ccc9e91ac3a59
+Merge: 326aef0 95d8cc1
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Tue Sep 9 11:51:36 2025 -0400
+
+    Merge remote-tracking branch 'ArrayBolt3/arraybolt3/trixie'
+
+commit 95d8cc1cd93f4f7e67a573180f0fab1f330595f8
+Author: Aaron Rainbolt <arraybolt3@ubuntu.com>
+Date:   Mon Sep 8 18:45:09 2025 -0500
+
+    Fix spacing, add Breaks/Replaces against Xfce metapackages
+
+commit e1df9fb747ee495b80fb8e6f4d60e92dd9783022
+Author: Aaron Rainbolt <arraybolt3@ubuntu.com>
+Date:   Sun Sep 7 11:53:16 2025 -0500
+
+    Avoid either/or dependency bug
+
+commit 326aef0cec952545dcbeb40731a89155af4ec17c
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sun Sep 7 08:20:29 2025 +0000
+
+    bumped changelog version
+
 commit 12f16c9fd353579a0f5ffeb2540e353a29b943cb
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Sun Sep 7 04:14:26 2025 -0400
