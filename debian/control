@@ -44,7 +44,6 @@ Package: whonix-qubes-gui-all
 Architecture: all
 Pre-Depends: legacy-dist
 Depends: qubes-whonix,
- qubes-whonix-shared-packages-recommended,
  ${misc:Depends}
 Description: Whonix systems, Qubes VMs, GUI packages
  For all Whonix systems.
@@ -93,10 +92,27 @@ Description: Whonix-Gateway systems, all hardware, GUI packages
  .
  Provides packages for all graphical desktop installations.
 
+Package: whonix-gateway-qubes-cli
+Architecture: all
+Pre-Depends: legacy-dist
+Depends: tinyproxy,
+ dnf,
+ qubes-core-agent-dom0-updates,
+ ${misc:Depends}
+Breaks: qubes-whonix-gateway-packages-recommended
+Replaces: qubes-whonix-gateway-packages-recommended
+Description: Whonix-Gateway systems, Qubes VMs, command-line packages
+ For Whonix-Gateway systems.
+ .
+ For Qubes virtual machines.
+ .
+ Provides packages for basic command-line-only installations.
+
 Package: whonix-gateway-qubes-server
 Architecture: all
 Pre-Depends: legacy-dist
-Depends: whonix-gateway-general-cli,
+Depends: whonix-gateway-qubes-cli,
+ whonix-gateway-general-cli,
  whonix-general-cli,
  dist-qubes-cli,
  dist-general-cli,
@@ -111,8 +127,6 @@ Description: Whonix-Gateway systems, Qubes VMs, server packages
 Package: whonix-gateway-qubes-gui-all
 Architecture: all
 Pre-Depends: legacy-dist
-Depends: qubes-whonix-shared-packages-recommended,
- ${misc:Depends}
 Description: Whonix-Gateway systems, Qubes VMs, GUI packages
  For Whonix-Gateway systems.
  .
@@ -124,12 +138,14 @@ Package: whonix-gateway-qubes-gui-lxqt
 Architecture: all
 Pre-Depends: legacy-dist
 Depends: whonix-gateway-qubes-gui-all,
+ whonix-gateway-qubes-cli,
  whonix-gateway-general-gui-all,
  whonix-gateway-general-cli,
  whonix-qubes-gui-all,
  whonix-general-gui-all,
  whonix-general-cli,
  dist-qubes-gui-lxqt,
+ dist-qubes-gui-all,
  dist-qubes-cli,
  dist-general-gui-lxqt,
  dist-general-gui-all,
@@ -328,8 +344,14 @@ Pre-Depends: legacy-dist
 Depends: qubes-gpg-split,
  qubes-img-converter,
  qubes-pdf-converter,
- qubes-whonix-workstation-packages-recommended,
+ pipewire-qubes,
+ pipewire-pulse,
+ wireplumber,
+ rtkit,
+ dbus-user-session,
  ${misc:Depends}
+Breaks: qubes-whonix-workstation-packages-recommended
+Replaces: qubes-whonix-workstation-packages-recommended
 Description: Whonix-Workstation systems, Qubes VMs, command-line packages
  For Whonix-Workstation systems.
  .
@@ -377,6 +399,7 @@ Depends: whonix-workstation-qubes-gui-all,
  whonix-general-gui-all,
  whonix-general-cli,
  dist-qubes-gui-lxqt,
+ dist-qubes-gui-all,
  dist-qubes-cli,
  dist-general-gui-lxqt,
  dist-general-gui-all,
