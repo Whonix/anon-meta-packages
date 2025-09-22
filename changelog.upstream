@@ -1,3 +1,34 @@
+commit 138401c9800dfd43d266b790430ed1d93c58b5ae
+Merge: 87d5cbc 230ec0d
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Mon Sep 22 13:06:39 2025 -0400
+
+    Merge remote-tracking branch 'ArrayBolt3/arraybolt3/trixie'
+
+commit 230ec0de17747e09908371c636a5c32c9973635d
+Author: Aaron Rainbolt <arraybolt3@ubuntu.com>
+Date:   Sun Sep 21 16:04:19 2025 -0500
+
+    Adjust dependencies for security-misc split
+
+commit 8b38c9b69fb2002f60a734a25ed92acdc6899f89
+Author: Aaron Rainbolt <arraybolt3@ubuntu.com>
+Date:   Sun Sep 21 14:17:14 2025 -0500
+
+    Merge qubes-whonix metapackages into main metapackages
+
+commit 422ede3816dd67c4cd6e0ef77aee357924e3b129
+Author: Aaron Rainbolt <arraybolt3@ubuntu.com>
+Date:   Sun Sep 21 13:53:23 2025 -0500
+
+    Fix metapackage bugs
+
+commit 87d5cbc9589c5d1b5d1a7ddff14de20309a00668
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Fri Sep 19 16:25:03 2025 +0000
+
+    bumped changelog version
+
 commit 6be98b74741d15b6a3afd4083b7e0bf22052a377
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Thu Sep 18 10:08:47 2025 -0400
