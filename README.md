@@ -1,10 +1,10 @@
-# Recommended packages for Whonix-Gateway and Whonix-Workstation GUI #
+# Whonix systems, all hardware, command-line packages #
 
-A metapackage, which installs recommended graphical user interface (GUI)
-default applications, which are useful in a default installation of a
-Whonix-Gateway or Whonix-Workstation desktop.
+For all Whonix systems.
 
-Safe to remove, if you know what you are doing.
+For all hardware platforms.
+
+Provides packages for basic command-line-only installations.
 
 ## How to install `anon-meta-packages` using apt-get ##
 
