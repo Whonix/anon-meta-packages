@@ -1,3 +1,15 @@
+commit c23993909a7fb4f228c89aa910e6e4bb6bf804ab
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Mon Nov 10 03:07:16 2025 -0500
+
+    no longer install xpdf by default
+
+commit c447cc724732e6e587e4f4f92d85ac5dc5f495c6
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Mon Oct 27 11:50:38 2025 +0000
+
+    bumped changelog version
+
 commit ee6fc5b88529a5aea9845291917aad723211481e
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Mon Oct 27 07:07:58 2025 -0400
