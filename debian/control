@@ -14,7 +14,6 @@ Architecture: all
 Pre-Depends: anon-apps-config, legacy-dist
 Depends: whonix-base-files,
  whonix-firewall,
- tor-ctrl,
  uwt,
  ${misc:Depends}
 Breaks: whonix-shared-packages-dependencies-cli,
