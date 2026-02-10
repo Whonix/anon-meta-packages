@@ -200,7 +200,8 @@ Depends: whonix-gateway-nonqubes-cli,
  whonix-general-cli,
  dist-baremetal-cli,
  dist-nonqubes-cli,
- dist-general-cli
+ dist-general-cli,
+ ${misc:Depends}
 Description: Whonix-Gateway systems, physical hardware, command-line packages
  For Whonix-Gateway systems.
  .
@@ -261,7 +262,8 @@ Depends: whonix-gateway-nonqubes-cli,
  whonix-general-cli,
  dist-vm-cli,
  dist-nonqubes-cli,
- dist-general-cli
+ dist-general-cli,
+ ${misc:Depends}
 Description: Whonix-Gateway systems, VMs, command-line packages
  For Whonix-Gateway systems.
  .
@@ -500,7 +502,8 @@ Depends: whonix-workstation-nonqubes-cli,
  whonix-general-cli,
  dist-baremetal-cli,
  dist-nonqubes-cli,
- dist-general-cli
+ dist-general-cli,
+ ${misc:Depends}
 Description: Whonix-Workstation systems, physical hardware, command-line packages
  For Whonix-Workstation systems.
  .
@@ -562,7 +565,8 @@ Depends: whonix-workstation-nonqubes-cli,
  whonix-general-cli,
  dist-vm-cli,
  dist-nonqubes-cli,
- dist-general-cli
+ dist-general-cli,
+ ${misc:Depends}
 Description: Whonix-Workstation systems, VMs, command-line packages
  For Whonix-Workstation systems.
  .
