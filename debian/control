@@ -11,7 +11,8 @@ Rules-Requires-Root: no
 
 Package: whonix-general-cli
 Architecture: all
-Pre-Depends: anon-apps-config, legacy-dist
+Pre-Depends: anon-apps-config,
+ legacy-dist
 Depends: whonix-base-files,
  whonix-firewall,
  uwt,
@@ -94,7 +95,11 @@ Description: Whonix-Gateway systems, all hardware, GUI packages
 Package: whonix-gateway-qubes-cli
 Architecture: all
 Pre-Depends: legacy-dist
-Depends: tinyproxy,
+Depends: whonix-gateway-general-cli,
+ whonix-general-cli,
+ dist-qubes-cli,
+ dist-general-cli,
+ tinyproxy,
  dnf,
  qubes-core-agent-dom0-updates,
  ${misc:Depends}
@@ -187,10 +192,27 @@ Description: Whonix-Gateway systems, not Qubes VMs, LXQt GUI packages
  .
  Provides packages for LXQt graphical desktop installations.
 
-Package: whonix-gateway-baremetal-server
+Package: whonix-gateway-baremetal-cli
 Architecture: all
 Pre-Depends: legacy-dist
 Depends: whonix-gateway-nonqubes-cli,
+ whonix-gateway-general-cli,
+ whonix-general-cli,
+ dist-baremetal-cli,
+ dist-nonqubes-cli,
+ dist-general-cli
+Description: Whonix-Gateway systems, physical hardware, command-line packages
+ For Whonix-Gateway systems.
+ .
+ For physical hardware.
+ .
+ Provides packages for basic command-line-only installations.
+
+Package: whonix-gateway-baremetal-server
+Architecture: all
+Pre-Depends: legacy-dist
+Depends: whonix-gateway-baremetal-cli,
+ whonix-gateway-nonqubes-cli,
  whonix-gateway-general-cli,
  whonix-general-cli,
  dist-baremetal-cli,
@@ -208,7 +230,8 @@ Description: Whonix-Gateway systems, physical hardware, server packages
 Package: whonix-gateway-baremetal-gui-lxqt
 Architecture: all
 Pre-Depends: legacy-dist
-Depends: whonix-gateway-nonqubes-gui-lxqt,
+Depends: whonix-gateway-baremetal-cli,
+ whonix-gateway-nonqubes-gui-lxqt,
  whonix-gateway-nonqubes-cli,
  whonix-gateway-general-gui-all,
  whonix-gateway-general-cli,
@@ -230,10 +253,27 @@ Description: Whonix-Gateway systems, physical hardware, LXQt GUI packages
  .
  Provides packages for LXQt graphical desktop installations.
 
-Package: whonix-gateway-vm-server
+Package: whonix-gateway-vm-cli
 Architecture: all
 Pre-Depends: legacy-dist
 Depends: whonix-gateway-nonqubes-cli,
+ whonix-gateway-general-cli,
+ whonix-general-cli,
+ dist-vm-cli,
+ dist-nonqubes-cli,
+ dist-general-cli
+Description: Whonix-Gateway systems, VMs, command-line packages
+ For Whonix-Gateway systems.
+ .
+ For non-Qubes virtual machines.
+ .
+ Provides packages for basic command-line-only installations.
+
+Package: whonix-gateway-vm-server
+Architecture: all
+Pre-Depends: legacy-dist
+Depends: whonix-gateway-vm-cli,
+ whonix-gateway-nonqubes-cli,
  whonix-gateway-general-cli,
  whonix-general-cli,
  dist-vm-cli,
@@ -251,7 +291,8 @@ Description: Whonix-Gateway systems, VMs, server packages
 Package: whonix-gateway-vm-gui-lxqt
 Architecture: all
 Pre-Depends: legacy-dist
-Depends: whonix-gateway-nonqubes-gui-lxqt,
+Depends: whonix-gateway-vm-cli,
+ whonix-gateway-nonqubes-gui-lxqt,
  whonix-gateway-nonqubes-cli,
  whonix-gateway-general-gui-all,
  whonix-gateway-general-cli,
@@ -343,7 +384,11 @@ Description: Whonix-Workstation systems, all hardware, LXQt GUI packages
 Package: whonix-workstation-qubes-cli
 Architecture: all
 Pre-Depends: legacy-dist
-Depends: qubes-gpg-split,
+Depends: whonix-workstation-general-cli,
+ whonix-general-cli,
+ dist-qubes-cli,
+ dist-general-cli,
+ qubes-gpg-split,
  qubes-img-converter,
  qubes-pdf-converter,
  pipewire-qubes,
@@ -447,10 +492,27 @@ Description: Whonix-Workstation systems, not Qubes VMs, LXQt GUI packages
  .
  Provides packages for LXQt graphical desktop installations.
 
-Package: whonix-workstation-baremetal-server
+Package: whonix-workstation-baremetal-cli
 Architecture: all
 Pre-Depends: legacy-dist
 Depends: whonix-workstation-nonqubes-cli,
+ whonix-workstation-general-cli,
+ whonix-general-cli,
+ dist-baremetal-cli,
+ dist-nonqubes-cli,
+ dist-general-cli
+Description: Whonix-Workstation systems, physical hardware, command-line packages
+ For Whonix-Workstation systems.
+ .
+ For physical hardware.
+ .
+ Provides packages for basic command-line-only installations.
+
+Package: whonix-workstation-baremetal-server
+Architecture: all
+Pre-Depends: legacy-dist
+Depends: whonix-workstation-baremetal-cli,
+ whonix-workstation-nonqubes-cli,
  whonix-workstation-general-cli,
  whonix-general-cli,
  dist-baremetal-cli,
@@ -468,7 +530,8 @@ Description: Whonix-Workstation systems, physical hardware, server packages
 Package: whonix-workstation-baremetal-gui-lxqt
 Architecture: all
 Pre-Depends: legacy-dist
-Depends: whonix-workstation-nonqubes-gui-lxqt,
+Depends: whonix-workstation-baremetal-cli,
+ whonix-workstation-nonqubes-gui-lxqt,
  whonix-workstation-nonqubes-cli,
  whonix-workstation-general-gui-lxqt,
  whonix-workstation-general-gui-all,
@@ -491,10 +554,27 @@ Description: Whonix-Workstation systems, physical hardware, LXQt GUI packages
  .
  Provides packages for LXQt graphical desktop installations.
 
-Package: whonix-workstation-vm-server
+Package: whonix-workstation-vm-cli
 Architecture: all
 Pre-Depends: legacy-dist
 Depends: whonix-workstation-nonqubes-cli,
+ whonix-workstation-general-cli,
+ whonix-general-cli,
+ dist-vm-cli,
+ dist-nonqubes-cli,
+ dist-general-cli
+Description: Whonix-Workstation systems, VMs, command-line packages
+ For Whonix-Workstation systems.
+ .
+ For non-Qubes virtual machines.
+ .
+ Provides packages for basic command-line-only installations.
+
+Package: whonix-workstation-vm-server
+Architecture: all
+Pre-Depends: legacy-dist
+Depends: whonix-workstation-vm-cli,
+ whonix-workstation-nonqubes-cli,
  whonix-workstation-general-cli,
  whonix-general-cli,
  dist-vm-cli,
@@ -512,7 +592,8 @@ Description: Whonix-Workstation systems, VMs, server packages
 Package: whonix-workstation-vm-gui-lxqt
 Architecture: all
 Pre-Depends: legacy-dist
-Depends: whonix-workstation-nonqubes-gui-lxqt,
+Depends: whonix-workstation-vm-cli,
+ whonix-workstation-nonqubes-gui-lxqt,
  whonix-workstation-nonqubes-cli,
  whonix-workstation-general-gui-lxqt,
  whonix-workstation-general-gui-all,
