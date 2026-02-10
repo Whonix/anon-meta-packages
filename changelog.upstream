@@ -1,3 +1,22 @@
+commit 2329bf7d27b15a9ca0250fcf6e58f44ebe1d815a
+Merge: 5136e16 4131c2f
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Tue Feb 10 07:12:22 2026 -0500
+
+    Merge remote-tracking branch 'ArrayBolt3/arraybolt3/trixie'
+
+commit 4131c2f68fc53ac25e46f2a5ec21534af8c2751d
+Author: Aaron Rainbolt <arraybolt3@gmail.com>
+Date:   Mon Feb 9 18:54:10 2026 -0600
+
+    Make -cli metapackages directly installable
+
+commit 5136e16c9093d8cf67ac3db3a7c52c77e7f9c521
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Dec 3 08:34:25 2025 +0000
+
+    bumped changelog version
+
 commit 380ac9a61c99a1fdd225ca74e87e34f9f97583b4
 Merge: 9afd342 af7aff6
 Author: Patrick Schleizer <adrelanos@whonix.org>
