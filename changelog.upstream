@@ -1,3 +1,15 @@
+commit 4eebc38c4d445efc48f2965f466d93af5a06cd8c
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Feb 14 03:34:08 2026 -0500
+
+    split-gpg-1 -> split-gpg2
+
+commit 467a8a12729f64f99f1055cfb7c5d9c6537f91c6
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Tue Feb 10 15:23:26 2026 +0000
+
+    bumped changelog version
+
 commit c578615db3da3bf289f8e87cad3d580eab469a2d
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Tue Feb 10 10:18:29 2026 -0500
