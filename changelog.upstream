@@ -1,8 +1,27 @@
+commit 87b5f58ea377352eb5faf4abf406e634de674f5f
+Merge: 6847d5a 92f992c
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Mon Feb 16 05:23:38 2026 -0500
+
+    Merge remote-tracking branch 'ArrayBolt3/arraybolt3/trixie'
+
+commit 6847d5adb75767a78e1680f07d06a44efa95403e
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Feb 14 12:45:40 2026 +0000
+
+    bumped changelog version
+
 commit 4eebc38c4d445efc48f2965f466d93af5a06cd8c
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Sat Feb 14 03:34:08 2026 -0500
 
     split-gpg-1 -> split-gpg2
+
+commit 92f992c0e1a451b8b252fe5fc28487a57c09d922
+Author: Aaron Rainbolt <arraybolt3@gmail.com>
+Date:   Thu Feb 12 20:58:08 2026 -0600
+
+    Only install kloak on GUI Whonix systems
 
 commit 467a8a12729f64f99f1055cfb7c5d9c6537f91c6
 Author: Patrick Schleizer <adrelanos@whonix.org>
